@@ -1,6 +1,6 @@
 package tdd;
 
-abstract class Money {
+class Money {
     protected int amount;
     protected String currency;
 
@@ -22,7 +22,9 @@ abstract class Money {
         return new Franc(amount, "CHF");
     }
 
-    abstract Money times(int multiplier);
+    Money times(int multiplier) {
+        return null;
+    }
 
     String currency() {
         return this.currency;
