@@ -33,4 +33,8 @@ class Money {
     Money times(int multiplier) {
         return new Money(this.amount * multiplier, this.currency);
     }
+
+    public Money plus(Money money) {
+        return new Money(this.amount + money.amount, this.currency);
+    }
 }
