@@ -22,15 +22,15 @@ class Money {
         return new Franc(amount, "CHF");
     }
 
-    Money times(int multiplier) {
-        return null;
-    }
-
     String currency() {
         return this.currency;
     }
 
     public String toString() {
         return this.amount + " " + this.currency;
+    }
+
+    Money times(int multiplier) {
+        return new Money(this.amount * multiplier, this.currency);
     }
 }
