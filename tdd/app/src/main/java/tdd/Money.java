@@ -7,4 +7,8 @@ public class Money {
         Money money = (Money) object;
         return this.amount == money.amount && this.getClass().equals(money.getClass());
     }
+
+    public static Dollar dollar(int amount) {
+        return new Dollar(amount);
+    }
 }
