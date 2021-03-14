@@ -1,6 +1,6 @@
 package tdd;
 
-class Money {
+class Money implements Expression {
     protected int amount;
     protected String currency;
 
@@ -34,7 +34,7 @@ class Money {
         return new Money(this.amount * multiplier, this.currency);
     }
 
-    public Money plus(Money money) {
+    public Expression plus(Money money) {
         return new Money(this.amount + money.amount, this.currency);
     }
 }
