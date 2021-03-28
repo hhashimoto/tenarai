@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestMaxMin" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-28T13:32:14" hostname="DESKTOP-VCLRV1J" time="0.027">
-  <properties/>
-  <testcase name="testTheMostExpensiveOrderedProduct" classname="TestMaxMin" time="0.026"/>
-  <testcase name="testCustomerWithMaximumNumberOfOrders" classname="TestMaxMin" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

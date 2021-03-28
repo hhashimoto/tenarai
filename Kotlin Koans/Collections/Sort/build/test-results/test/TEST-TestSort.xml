@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSort" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-28T13:14:10" hostname="DESKTOP-VCLRV1J" time="0.029">
-  <properties/>
-  <testcase name="testGetCustomersSortedByNumberOfOrders" classname="TestSort" time="0.029"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
