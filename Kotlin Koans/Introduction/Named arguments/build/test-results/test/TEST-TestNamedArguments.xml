@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNamedArguments" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-22T04:46:36" hostname="DESKTOP-VCLRV1J" time="0.02">
-  <properties/>
-  <testcase name="testJoinToString" classname="TestNamedArguments" time="0.02"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
