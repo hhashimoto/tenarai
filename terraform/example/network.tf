@@ -488,3 +488,21 @@ resource "aws_kms_alias" "example" {
   name          = "alias/example"
   target_key_id = aws_kms_key.example.key_id
 }
+
+resource "aws_ssm_parameter" "db_username" {
+  name        = "/db/username"
+  value       = "root"
+  type        = "String"
+  description = "データベースのユーザ名"
+}
+
+resource "aws_ssm_parameter" "db_raw_password" {
+  name        = "/db/password"
+  value       = "uninitialized"
+  type        = "SecureString"
+  description = "データベースのパスワード"
+
+  lifecycle {
+    ignore_changes = [value]
+  }
+}
