@@ -18,6 +18,14 @@ variable "example_instance_type" {
 resource "aws_instance" "example" {
   ami           = data.aws_ami.recent_amazon_linux_2.image_id
   instance_type = var.example_instance_type
+
+  vpc_security_group_ids = [aws_security_group.example_ec2.id]
+
+  user_data = <<EOF
+    #!/bin/bash
+    yum install -y httpd
+    systemctl start httpd.service
+EOF
 }
 
 data "aws_ami" "recent_amazon_linux_2" {
@@ -55,4 +63,8 @@ resource "aws_security_group" "example_ec2" {
 
 output "example_instance_id" {
   value = aws_instance.example.id
+}
+
+output "example_public_dns" {
+  value = aws_instance.example.public_dns
 }
