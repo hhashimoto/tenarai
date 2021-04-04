@@ -629,7 +629,7 @@ resource "aws_ecr_lifecycle_policy" "example" {
     {
       "rules": [
         {
-          "rulePolicy": 1,
+          "rulePriority": 1,
           "description": "Keep last 30 release tagged images",
           "selection": {
             "tagStatus": "tagged",
@@ -640,7 +640,7 @@ resource "aws_ecr_lifecycle_policy" "example" {
           "action": {
             "type": "expire"
           }
-        },
+        }
       ]
     }
 EOF
