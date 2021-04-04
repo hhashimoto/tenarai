@@ -70,3 +70,15 @@ resource "aws_s3_bucket" "public" {
     max_age_seconds = 3000
   }
 }
+
+resource "aws_s3_bucket" "alb_log" {
+  bucket = "h2-alb-log-pragmatic-terraform-2"
+
+  lifecycle_rule {
+    enabled = true
+
+    expiration {
+      days = "180"
+    }
+  }
+}
